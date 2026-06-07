@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PlaywrGB+J:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>VibeSync — SYNC YOUR MOOD</title>
+  </head>
+  <body
+    style="
+      background: linear-gradient(
+        90deg,
+        rgba(23, 20, 47, 1) 0%,
+        rgba(13, 19, 30, 1) 100%
+      );
+    "
+    class="min-h-screen bg-fixed"
+  >
+    <!-- হেডার হেডার -->
+    <header>
+      <!-- ধনের লোগোর সেক্সন  -->
+      <div class="flex justify-center items-center gap-3 p-3">
+        <img class="w-15" src="./logo.png" alt="VibeSync" />
+        <h1
+          class="text-white font-extrabold"
+          style="font-family: &quot;Playwrite GB J&quot;, cursive"
+        >
+          SYNC YOUR MOOD
+        </h1>
+      </div>
+    </header>
+    <!-- আজকের ধনের তারিখ সেক্সন -->
+    <div class="text-white text-center p-3">সন্ধা ৬:৩০ • শুক্রবার</div>
+    <!-- ধোনের হেডিং -->
+    <h1 class="text-white text-center font-extrabold text-4xl p-3">
+      আপনার মন এখন কি চাচ্ছে?
+    </h1>
+    <!-- ধনের মুড সিলেক্টর সেক্সন -->
+    <section class="flex flex-wrap justify-center gap-3 p-3">
+      <!-- ধোনের ফোকাস -->
+      <div
+        class="bg-black/30 flex gap-5 justify-between p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+      >
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-headphones text-4xl text-[#ff4a4a]"></i>
+          <h2 class="font-extrabold text-xl">Focus</h2>
+          <p class="text-nowrap text-white/70">পড়াশোনা • কাজ</p>
+        </div>
+        <div class="bg-blue-700 p-1 rounded-full flex">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+      <!-- হেডার রিলাক্স -->
+      <div
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+      >
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-leaf text-4xl text-green-400"></i>
+          <h2 class="font-extrabold text-xl">Relax</h2>
+          <p class="text-nowrap text-white/70">বিশ্রাম • শান্তি</p>
+        </div>
+        <div class="bg-blue-700 p-1 rounded-full flex">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+      <!-- বালের স্লিপ -->
+      <div
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+      >
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-moon text-4xl text-yellow-300"></i>
+          <h2 class="font-extrabold text-xl">Sleep</h2>
+          <p class="text-nowrap text-white/70">ঘুমের প্রস্তুতি</p>
+        </div>
+        <div class="bg-blue-700 p-1 rounded-full flex">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+      <!-- শাওয়ার ন্যাচার -->
+      <div
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+      >
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-cloud-rain text-4xl text-blue-300"></i>
+          <h2 class="font-extrabold text-xl">Nature</h2>
+          <p class="text-nowrap text-white/70">বৃষ্টি • প্রকৃতি</p>
+        </div>
+        <div class="bg-blue-700 p-1 rounded-full flex">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </section>
+    <!-- শাওয়ার প্লেয়ার -->
+    <section class="flex justify-center">
+      <div
+        class="p-4 bg-black/30 border-white/50 border rounded-2xl text-white sm:w-142 max-sm:w-92 md:w-190 flex flex-col gap-2 items-center"
+      >
+        <div><i class="fa-solid fa-play"></i><span>এখন চলছে </span></div>
+        <h1 class="text-xl font-extrabold">Focus Vibes - Study Music</h1>
+        <p class="text-white/70">Nature</p>
+        <img src="./plaing.gif" alt="Playing" class="w-18 opacity-50" />
+        <div  class="flex justify-center gap-7 mt-2">
+          <i class="fa-solid fa-backward-fast"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-forward-fast"></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
