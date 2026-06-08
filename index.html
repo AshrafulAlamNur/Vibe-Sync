@@ -50,53 +50,53 @@
     <section class="flex flex-wrap justify-center gap-3 p-3">
       <!-- ধোনের ফোকাস -->
       <div
-        class="bg-black/30 flex gap-5 justify-between p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+        class="bg-black/30 flex gap-5 justify-between p-4 text-white items-start rounded-2xl border-white/50 border w-45 cursor-pointer hover:bg-white/5 transition-all ease-in-out"
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-headphones text-4xl text-[#ff4a4a]"></i>
           <h2 class="font-extrabold text-xl">Focus</h2>
           <p class="text-nowrap text-white/70">পড়াশোনা • কাজ</p>
         </div>
-        <div class="bg-blue-700 p-1 rounded-full flex">
+        <div class="bg-blue-700 p-1 rounded-full flex invisible">
           <i class="fa-solid fa-check"></i>
         </div>
       </div>
       <!-- হেডার রিলাক্স -->
       <div
-        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45 cursor-pointer hover:bg-white/5 transition-all ease-in-out"
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-leaf text-4xl text-green-400"></i>
           <h2 class="font-extrabold text-xl">Relax</h2>
           <p class="text-nowrap text-white/70">বিশ্রাম • শান্তি</p>
         </div>
-        <div class="bg-blue-700 p-1 rounded-full flex">
+        <div class="bg-blue-700 p-1 rounded-full flex invisible">
           <i class="fa-solid fa-check"></i>
         </div>
       </div>
       <!-- বালের স্লিপ -->
       <div
-        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45 cursor-pointer hover:bg-white/5 transition-all ease-in-out"
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-moon text-4xl text-yellow-300"></i>
           <h2 class="font-extrabold text-xl">Sleep</h2>
           <p class="text-nowrap text-white/70">ঘুমের প্রস্তুতি</p>
         </div>
-        <div class="bg-blue-700 p-1 rounded-full flex">
+        <div class="bg-blue-700 p-1 rounded-full flex invisible">
           <i class="fa-solid fa-check"></i>
         </div>
       </div>
       <!-- শাওয়ার ন্যাচার -->
       <div
-        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45"
+        class="bg-black/30 flex justify-between gap-5 p-4 text-white items-start rounded-2xl border-white/50 border w-45 cursor-pointer hover:bg-white/5 transition-all ease-in-out"
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-cloud-rain text-4xl text-blue-300"></i>
           <h2 class="font-extrabold text-xl">Nature</h2>
           <p class="text-nowrap text-white/70">বৃষ্টি • প্রকৃতি</p>
         </div>
-        <div class="bg-blue-700 p-1 rounded-full flex">
+        <div class="bg-blue-700 p-1 rounded-full flex invisible">
           <i class="fa-solid fa-check"></i>
         </div>
       </div>
@@ -109,22 +109,28 @@
         <div><i class="fa-solid fa-play"></i><span>এখন চলছে </span></div>
         <h1 class="text-xl font-extrabold">Focus Vibes - Study Music</h1>
         <p class="text-white/70">Nature</p>
-        <img src="./plaing.gif" alt="Playing" class="w-18 opacity-50" />
+        <img
+          src="./plaing.gif"
+          alt="Playing"
+          class="w-18 opacity-50 invisible"
+        />
         <div class="flex justify-center gap-7 mt-2">
-          <i class="fa-solid fa-backward-fast"></i>
-          <i class="fa-solid fa-play"></i>
-          <i class="fa-solid fa-forward-fast"></i>
+          <i class="fa-solid fa-backward-fast cursor-pointer"></i>
+          <i class="fa-solid fa-play cursor-pointer"></i>
+          <i class="fa-solid fa-forward-fast cursor-pointer"></i>
         </div>
       </div>
     </section>
 
     <!-- বালের লিষ্ট -->
-    <section class="flex justify-center p-3">
+    <section class="flex justify-center p-3 cursor-pointer">
       <div
         class="p-4 bg-black/30 border-white/50 border rounded-2xl text-white sm:w-142 max-sm:w-92 md:w-190"
       >
         <div class="flex justify-between items-center">
-          <div><img src="./images/music1.jpeg" alt="" class="w-12 rounded"/></div>
+          <div>
+            <img src="./images/music1.jpeg" alt="" class="w-12 rounded" />
+          </div>
           <div>
             <h2>Focus Vibes - Study Music</h2>
             <p class="text-xs text-white/70">Nature</p>
