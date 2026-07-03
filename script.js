@@ -12,6 +12,7 @@ let musics = [
     src: "https://github.com/AshrafulAlamNur/Vibe-Sync/releases/download/v1.0.0/Deep.Focus.-.Music.For.Studying.Concentration.and.Work.m4a",
   },
 ];
+const pageTitle = document.getElementsByTagName("title")[0];
 const modeElements = document.querySelectorAll(".mode");
 const musicName = document.querySelector(".music-name");
 const musicType = document.querySelector(".music-type");
@@ -40,11 +41,13 @@ playBtn.addEventListener("click", () => {
     playBtn.classList.remove("fa-play");
     playingGif.classList.remove("opacity-0");
     playingGif.classList.add("opacity-100");
+    pageTitle.innerHTML = musics[0].name;
   } else {
     audio.pause();
     playBtn.classList.remove("fa-pause");
     playBtn.classList.add("fa-play");
     playingGif.classList.remove("opacity-100");
     playingGif.classList.add("opacity-0");
+    pageTitle.innerHTML = "VibeSync — SYNC YOUR MOOD";
   }
 });
