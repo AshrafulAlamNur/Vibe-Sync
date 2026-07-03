@@ -45,7 +45,7 @@
     <!-- আজকের ধনের তারিখ সেক্সন -->
     <div class="text-white text-center p-3">সন্ধা ৬:৩০ • শুক্রবার</div>
     <!-- ধোনের হেডিং -->
-    <h1 class="text-white text-center font-extrabold text-4xl p-3">
+    <h1 class="text-white text-center font-light text-4xl p-3">
       আপনার মন এখন কি চাচ্ছে?
     </h1>
     <!-- ধনের মুড সিলেক্টর সেক্সন -->
@@ -56,7 +56,7 @@
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-headphones text-4xl text-[#ff4a4a]"></i>
-          <h2 class="font-extrabold text-xl">Focus</h2>
+          <h2 class="font-medium text-xl">Focus</h2>
           <p class="text-nowrap text-white/70">পড়াশোনা • কাজ</p>
         </div>
         <div class="bg-blue-700 p-1 rounded-full flex invisible tick">
@@ -69,7 +69,7 @@
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-leaf text-4xl text-green-400"></i>
-          <h2 class="font-extrabold text-xl">Relax</h2>
+          <h2 class="font-medium text-xl">Relax</h2>
           <p class="text-nowrap text-white/70">বিশ্রাম • শান্তি</p>
         </div>
         <div class="bg-blue-700 p-1 rounded-full flex invisible tick">
@@ -82,7 +82,7 @@
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-moon text-4xl text-yellow-300"></i>
-          <h2 class="font-extrabold text-xl">Sleep</h2>
+          <h2 class="font-medium text-xl">Sleep</h2>
           <p class="text-nowrap text-white/70">ঘুমের প্রস্তুতি</p>
         </div>
         <div class="bg-blue-700 p-1 rounded-full flex invisible tick">
@@ -95,7 +95,7 @@
       >
         <div class="flex flex-col gap-2">
           <i class="fa-solid fa-cloud-rain text-4xl text-blue-300"></i>
-          <h2 class="font-extrabold text-xl">Nature</h2>
+          <h2 class="font-medium text-xl">Nature</h2>
           <p class="text-nowrap text-white/70">বৃষ্টি • প্রকৃতি</p>
         </div>
         <div class="bg-blue-700 p-1 rounded-full flex invisible tick">
@@ -109,16 +109,16 @@
         class="p-4 bg-black/30 border-white/50 border rounded-2xl text-white sm:w-142 max-sm:w-92 md:w-190 flex flex-col gap-2 items-center"
       >
         <div><i class="fa-solid fa-play"></i><span>এখন চলছে </span></div>
-        <h1 class="text-xl font-extrabold music-name">Focus Vibes - Study Music</h1>
+        <h1 class="text-xl font-semibold music-name"></h1>
         <p class="text-white/70 music-type">Nature</p>
         <img
-          src="./plaing.gif"
+          src="./playing.gif"
           alt="Playing"
-          class="w-18 opacity-50 invisible"
+          class="w-18 opacity-0 playing-gif transition-all ease-in-out"
         />
         <div class="flex justify-center gap-7 mt-2">
           <i class="fa-solid fa-backward-fast cursor-pointer"></i>
-          <i class="fa-solid fa-play cursor-pointer"></i>
+          <i class="fa-solid fa-play cursor-pointer play-btn"></i>
           <i class="fa-solid fa-forward-fast cursor-pointer"></i>
         </div>
       </div>
