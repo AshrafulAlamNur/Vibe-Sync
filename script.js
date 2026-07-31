@@ -1,3 +1,4 @@
+// বালের মিউজিকের তালিকা
 let musics = [
   {
     name: "Deep Focus - Music For Studying, Concentration and Work",
@@ -12,14 +13,19 @@ let musics = [
     src: "https://github.com/AshrafulAlamNur/Vibe-Sync/releases/download/v1.0.0/Deep.Focus.-.Music.For.Studying.Concentration.and.Work.m4a",
   },
 ];
+
+// সোনার এলিমেন্টস সিলেক্ট
 const pageTitle = document.getElementsByTagName("title")[0];
 const modeElements = document.querySelectorAll(".mode");
 const musicName = document.querySelector(".music-name");
 const musicType = document.querySelector(".music-type");
 const playBtn = document.querySelector(".play-btn");
 const playingGif = document.querySelector(".playing-gif");
+
+// ধনের অডিও প্লে
 let audio = new Audio(musics[0].src);
 
+// শাওয়ার মুড সিলেক্টর 
 modeElements.forEach((singleMode) => {
   singleMode.addEventListener("click", () => {
     modeElements.forEach((othersMode) => {
